@@ -62,6 +62,9 @@ NEXT_PUBLIC_AIR_PARTNER_ID=your_partner_id_here
 
 # Backend API URL
 NEXT_PUBLIC_API_URL=http://localhost:3001
+
+# Frontend URL for KlyroGate links (set this for deployment)
+NEXT_PUBLIC_FRONTEND_URL=https://yourdomain.com
 ```
 
 ### Backend Environment Variables (.env)

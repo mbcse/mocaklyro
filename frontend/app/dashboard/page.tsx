@@ -8,6 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Shield, Plus, ExternalLink, Users, Clock, CheckCircle, Eye, Loader2 } from "lucide-react";
 import { api } from "@/lib/axiosClient";
+import { env } from "@/config/env";
 
 interface Partner {
   id: string;
@@ -41,7 +42,7 @@ export default function Dashboard() {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   
-  const baseUrl = typeof window !== 'undefined' ? window.location.origin : '';
+  const baseUrl = env.FRONTEND_URL;
 
   useEffect(() => {
     checkAuthAndLoadData();
