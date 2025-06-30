@@ -12,7 +12,8 @@ export const env = cleanEnv(process.env, {
     "http://localhost:3000",
     "https://klyro.dev",
     "https://www.klyro.dev",
-    "https://miniapp.klyro.dev"
+    "https://miniapp.klyro.dev",
+    "https://mocaklyro.vercel.app"
   ].join(',') }),
   COMMON_RATE_LIMIT_MAX_REQUESTS: num({ devDefault: testOnly(1000) }),
   COMMON_RATE_LIMIT_WINDOW_MS: num({ devDefault: testOnly(1000) }),
